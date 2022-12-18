@@ -1,0 +1,12 @@
+<div class="card-voiture">
+    <p-card header={{voiture.libelle}} subheader={{voiture.prix}} [style]="{height: '30em', width: '25em'}" styleClass="p-card-shadow">
+        <ng-template pTemplate="header">
+            <img alt="Card" src={{voiture.image}} [style]="{height: '15em'}">
+        </ng-template>
+        <ng-template pTemplate="footer">
+            <button (click)="onDetail(voiture.id)" pButton icon="pi pi-eye"></button>
+            <button (click)="onEdit(voiture.id)" pButton icon="pi pi-file-edit" class="btn-modif"></button>
+            <button (click)="onSuppr(voiture)" pButton icon="pi pi-times" class="btn-suppr"></button>
+        </ng-template>
+    </p-card>
+</div>

@@ -1,0 +1,22 @@
+<h1>Formulaire d'ajout</h1>
+<div class="container">
+    <form [formGroup]="form">
+        <div class="bloc">
+            <label>Libelle</label><br>
+            <input id="float-input" type="text" formControlName="libelle"> 
+        </div>
+        <div class="bloc">
+            <label>Description</label><br>
+            <textarea rows="5" cols="33" formControlName="description"></textarea>
+        </div>
+        <div class="bloc">
+            <label>Prix</label><br>
+            <input id="float-input" type="number" formControlName="prix"> 
+        </div>
+        <div class="bloc">
+            <label>Image</label><br>
+            <input id="float-input" type="text" formControlName="image"> 
+        </div>
+        <p-button type="submit" (click)="onSubmit()" label="Enregistrer" icon="pi pi-check" iconPos="right" [disabled]="!form.valid"></p-button>
+    </form>
+</div>

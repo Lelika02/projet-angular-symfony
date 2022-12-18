@@ -1,0 +1,25 @@
+.card-voiture{
+    margin-bottom: 1em;
+    margin-left: 3em;
+}
+
+button {
+    margin-left: 1em;
+}
+
+
+.btn-modif {
+    background-color: green;
+
+    &:hover {
+        background-color: #47DF0E;
+    }
+}
+
+.btn-suppr {
+    background-color: red;
+
+    &:hover {
+        background-color: #F5303F;
+    }
+}

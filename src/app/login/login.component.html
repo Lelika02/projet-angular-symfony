@@ -1,0 +1,16 @@
+<h1>Formulaire de connexion</h1>
+<p>{{message}}</p>
+<div class="container">
+    <form [formGroup]="form">
+        <div class="bloc">
+            <label>Nom d'utilisateur</label><br>
+            <input id="username" type="text" formControlName="username" required> 
+        </div>
+        <div class="bloc">
+            <label>Mot de passe</label><br>
+            <input id="password" type="password" formControlName="password" required> 
+        </div>
+        <p-button type="submit" (click)="login()" label="Connexion" icon="pi pi-check" iconPos="right" *ngIf="!auth.isLoggedIn"></p-button>
+        <p-button type="submit" (click)="logout()" label="Deconnexion" icon="pi pi-check" iconPos="right" *ngIf="auth.isLoggedIn"></p-button>
+    </form>
+</div>

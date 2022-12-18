@@ -1,0 +1,31 @@
+.container{
+    width: 45em;
+    margin: 0 auto;
+    text-align: center;
+
+    input {
+        width: 60%;
+        height: 4em;
+        padding: 1em;
+        font-size: 1em;
+        border-radius: 1em;
+    }
+
+    label {
+        font-size: 1.5em;
+    }
+
+    .bloc {
+        margin-bottom: 1.5em;
+    }
+}
+
+h1 {
+    text-align: center;
+}
+
+p{
+    text-align: center;
+    color: red;
+    font-size: 1.2em;
+}

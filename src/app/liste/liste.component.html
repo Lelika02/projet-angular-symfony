@@ -1,0 +1,6 @@
+<div class="btn-add">
+    <p-button (click)="onAjouter()" label="Ajouter une nouvelle voiture" icon="pi pi-plus" iconPos="right"></p-button>
+</div>
+<div class="liste">
+    <app-card *ngFor="let car of voitures" [voiture]="car"></app-card>
+</div>
