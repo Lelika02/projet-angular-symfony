@@ -16,17 +16,17 @@ export class HeaderComponent implements OnInit {
     this.items = [
       {
         label: 'ACCUEIL',
-        url: ' ',
+        routerLink: '/',
         icon: 'pi pi-fw pi-home'
       },
       {
         label: 'GAMMES VOITURES',
-        url: 'voitures',
+        routerLink: 'voitures',
         icon: 'pi pi-fw pi-list'
       },
       {
         label: 'SE CONNECTER',
-        url: 'login',
+        routerLink: 'login',
         icon: 'pi pi-fw pi-sign-in'
       },
       {
